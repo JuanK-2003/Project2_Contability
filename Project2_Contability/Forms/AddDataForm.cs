@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project2_Contability
+namespace Project2_Contability.Forms
 {
-    public partial class Form1 : Form
+    public partial class AddDataForm : Form
     {
-        public Form1()
+        public AddDataForm()
         {
             InitializeComponent();
         }

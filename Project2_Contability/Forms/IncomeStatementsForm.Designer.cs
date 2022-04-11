@@ -1,6 +1,6 @@
 ﻿namespace Project2_Contability.Forms
 {
-    partial class AddDataForm
+    partial class IncomeStatementsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(98)))));
+            this.panel1.Location = new System.Drawing.Point(-3, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1143, 577);
+            this.panel1.TabIndex = 0;
+            // 
+            // IncomeStatementsForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "AddData";
+            this.ClientSize = new System.Drawing.Size(1139, 576);
+            this.Controls.Add(this.panel1);
+            this.Name = "IncomeStatementsForm";
+            this.Text = "IncomeStatementsForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
     }
 }

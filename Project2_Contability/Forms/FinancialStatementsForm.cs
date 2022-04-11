@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project2_Contability.Forms
 {
-    public partial class AddDataForm : Form
+    public partial class FinancialStatementsForm : Form
     {
-        public AddDataForm()
+        public FinancialStatementsForm()
         {
             InitializeComponent();
         }

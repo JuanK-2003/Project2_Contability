@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,17 +49,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AddDataForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddDataForm.Designer.cs">
-      <DependentUpon>AddDataForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\CreateDataForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\CreateDataForm.Designer.cs">
       <DependentUpon>CreateDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FinancialStatementsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FinancialStatementsForm.Designer.cs">
+      <DependentUpon>FinancialStatementsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IncomeStatementsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IncomeStatementsForm.Designer.cs">
+      <DependentUpon>IncomeStatementsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Welcome.cs">
       <SubType>Form</SubType>
@@ -70,8 +79,23 @@
     <Compile Include="Forms\GeneralBalaceForm.Designer.cs">
       <DependentUpon>GeneralBalaceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Group Class\Account.cs" />
+    <Compile Include="Group Class\DataToGeneralBalance.cs" />
+    <Compile Include="Group Class\GeneralBalance.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CreateDataForm.resx">
+      <DependentUpon>CreateDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FinancialStatementsForm.resx">
+      <DependentUpon>FinancialStatementsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralBalaceForm.resx">
+      <DependentUpon>GeneralBalaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IncomeStatementsForm.resx">
+      <DependentUpon>IncomeStatementsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +109,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -98,9 +123,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Group Class\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\LOGO-UMES-COLOR.png" />
   </ItemGroup>

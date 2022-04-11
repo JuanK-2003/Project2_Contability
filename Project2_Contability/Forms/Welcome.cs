@@ -33,6 +33,7 @@ namespace Project2_Contability.Forms
         GeneralBalaceForm generalBalanceForm = new GeneralBalaceForm(); // Genera balance general
         FinancialStatementsForm finanacialStatementsForm = new FinancialStatementsForm(); // Muestra los Estados Financieros
         IncomeStatementsForm incomeStatementsForm = new IncomeStatementsForm(); // Muestra los Estados de Resultados
+        EditForm editForm = new EditForm();
 
         /*private void OpenForm<OurForm>() where OurForm : Form, new ()
         {
@@ -91,7 +92,7 @@ namespace Project2_Contability.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            generalBalanceForm.LoadData(op);
+            //generalBalanceForm.LoadData(op);
             generalBalanceForm.ShowDialog();
 
             button3.BackColor = Color.FromArgb(12, 61, 92);
@@ -107,6 +108,12 @@ namespace Project2_Contability.Forms
         {
             incomeStatementsForm.ShowDialog();
             button5.BackColor = Color.FromArgb(12, 61, 92);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            editForm.ShowDialog();
+            button6.BackColor = Color.FromArgb(13, 93, 142);
         }
     }
 }

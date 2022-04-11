@@ -37,8 +37,10 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -47,6 +49,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
+            this.panel2.Controls.Add(this.button6);
             this.panel2.Location = new System.Drawing.Point(0, -1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1280, 41);
@@ -162,15 +165,6 @@
             this.panel1.Size = new System.Drawing.Size(154, 599);
             this.panel1.TabIndex = 0;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(144, 39);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1136, 599);
-            this.panel3.TabIndex = 2;
-            // 
             // button2
             // 
             this.button2.FlatAppearance.BorderSize = 0;
@@ -189,6 +183,30 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Location = new System.Drawing.Point(144, 39);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1136, 599);
+            this.panel3.TabIndex = 2;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.Location = new System.Drawing.Point(648, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(162, 34);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "Editar";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -203,6 +221,7 @@
             this.Name = "Welcome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -222,5 +241,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button6;
     }
 }

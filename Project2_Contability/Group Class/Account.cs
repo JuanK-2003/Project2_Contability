@@ -11,7 +11,7 @@ namespace Project2_Contability.Group_Class
         private string nameCuenta;
         private double credit = 0;
         private double debit = 0;
-        private int type1; // activo (type1=0), pasivo (type1=1), capital (type1=2)
+        private int type1; // activo (type1=0), pasivo (type1=1), capital (type1=2) 
         private int type2; // corriente (type2=0), no corriente (type2=1), diferido (type2=2)
 
         public Account()

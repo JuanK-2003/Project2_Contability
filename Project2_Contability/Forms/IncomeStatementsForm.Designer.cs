@@ -46,6 +46,7 @@
             this.ClientSize = new System.Drawing.Size(1139, 576);
             this.Controls.Add(this.panel1);
             this.Name = "IncomeStatementsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IncomeStatementsForm";
             this.ResumeLayout(false);
 

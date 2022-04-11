@@ -17,9 +17,25 @@ namespace Project2_Contability.Forms
             InitializeComponent();
         }
 
-        private void OpenForm<OurForm>() where OurForm : Form, new ()
-        {
+        /*
+         * 
+         *  1. Welcome
+         *  2. CreateDataForm
+         *  3. AddAccountForm
+         *  4. GeneralBalaceForm
+         *  5. FinancialStatementsForm
+         *  6. IncomeStatementsForm
+         * 
+         */
 
+        CreateDataForm createDataForm = new CreateDataForm(); // Se crean la cuentas
+        AddAccountForm addAccountForm = new AddAccountForm(); // Agregan las cuentas y si se débita o acrédita billete :v 
+        GeneralBalaceForm generalBalanceForm = new GeneralBalaceForm(); // Genera balance general
+        FinancialStatementsForm finanacialStatementsForm = new FinancialStatementsForm(); // Muestra los Estados Financieros
+        IncomeStatementsForm incomeStatementsForm = new IncomeStatementsForm(); // Muestra los Estados de Resultados
+
+        /*private void OpenForm<OurForm>() where OurForm : Form, new ()
+        {
             Form formulario;
             formulario = panel3.Controls.OfType<OurForm>().FirstOrDefault();
 
@@ -39,12 +55,14 @@ namespace Project2_Contability.Forms
             {
                 formulario.BringToFront();
             }
-        }
+        }*/
 
-        private void CloseForms(object sender, FormClosedEventArgs e)
+        /*private void CloseForms(object sender, FormClosedEventArgs e)
         {
             if (Application.OpenForms["Welcome"] == null)
                 button1.BackColor = Color.FromArgb(4, 41, 68);
+            if (Application.OpenForms["AddAccountForm"] == null)
+                button2.BackColor = Color.FromArgb(4, 41, 68);
             if (Application.OpenForms["CreateDataForm"] == null)
                 button3.BackColor = Color.FromArgb(4, 41, 68);
             if (Application.OpenForms["GeneralBalanceForm"] == null)
@@ -53,29 +71,41 @@ namespace Project2_Contability.Forms
                 button3.BackColor = Color.FromArgb(4, 41, 68);
             if (Application.OpenForms["IncomeStatementsForm"] == null)
                 button3.BackColor = Color.FromArgb(4, 41, 68);
-        }
+        }*/
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenForm<CreateDataForm>();
+            createDataForm.ShowDialog();
+            op = createDataForm.outList;
             button1.BackColor = Color.FromArgb(12, 61, 92);
+        }
+
+        string op;
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            addAccountForm.RefreshCombo(op);
+            addAccountForm.ShowDialog();
+            button2.BackColor = Color.FromArgb(12, 61, 92);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            OpenForm<GeneralBalaceForm>();
+            generalBalanceForm.LoadData(op);
+            generalBalanceForm.ShowDialog();
+
             button3.BackColor = Color.FromArgb(12, 61, 92);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            OpenForm<FinancialStatementsForm>();
+            finanacialStatementsForm.ShowDialog();
             button4.BackColor = Color.FromArgb(12, 61, 92);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            OpenForm<IncomeStatementsForm>();
+            incomeStatementsForm.ShowDialog();
             button5.BackColor = Color.FromArgb(12, 61, 92);
         }
     }

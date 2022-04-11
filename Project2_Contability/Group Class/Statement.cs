@@ -8,5 +8,6 @@ namespace Project2_Contability.Group_Class
 {
     internal class Statement
     {
+        
     }
 }

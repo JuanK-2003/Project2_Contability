@@ -94,8 +94,10 @@
     </Compile>
     <Compile Include="Group Class\Account.cs" />
     <Compile Include="Group Class\DataToGeneralBalance.cs" />
+    <Compile Include="Group Class\EstadoResultados.cs" />
     <Compile Include="Group Class\GeneralBalance.cs" />
     <Compile Include="Group Class\Statement.cs" />
+    <Compile Include="Group Class\ToShowER.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\CreateDataForm.resx">

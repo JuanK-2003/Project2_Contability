@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using ClaseEstadoResultados;
+using Newtonsoft.Json;
 using Project2_Contability.Group_Class;
 using System;
 using System.Collections.Generic;
@@ -24,12 +25,26 @@ namespace Project2_Contability.Forms
         public void receiveBalanceSaldos(string repr)
         {
             balanceSaldos = JsonConvert.DeserializeObject<List<Account>>(repr);
-            dataGridView1.DataSource = new BindingList<Account>(balanceSaldos);
+
+            EstadoResultados er = new EstadoResultados();
+            dataGridView1.DataSource = new BindingList<ToShowER>(er.GenerateEstadoResultados(balanceSaldos,checkBox2.Checked, checkBox1.Checked));
         }
 
         private void IncomeStatementsForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            EstadoResultados er = new EstadoResultados();
+            dataGridView1.DataSource = new BindingList<ToShowER>(er.GenerateEstadoResultados(balanceSaldos, checkBox2.Checked, checkBox1.Checked));
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            EstadoResultados er = new EstadoResultados();
+            dataGridView1.DataSource = new BindingList<ToShowER>(er.GenerateEstadoResultados(balanceSaldos, checkBox2.Checked, checkBox1.Checked));
         }
     }
 }

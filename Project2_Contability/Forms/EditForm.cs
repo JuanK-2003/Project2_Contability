@@ -48,7 +48,8 @@ namespace Project2_Contability.Forms
             }
             else
             {
-                nuevaCuenta.Type1 = jkl;
+                nuevaCuenta.Type1 = jkl - 4;
+                nuevaCuenta.Type2 = 0;
             }
 
             if (textBoxCredito.Text != "")

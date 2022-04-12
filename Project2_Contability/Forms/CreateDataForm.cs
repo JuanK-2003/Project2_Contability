@@ -75,7 +75,7 @@ namespace Project2_Contability.Forms
                     }
                     else
                     {
-                        outAccount = new Account(nameCuenta: textBox1.Text, credit: 0f, debit: 0f, type1: jkl, type2: 0);
+                        outAccount = new Account(nameCuenta: textBox1.Text, credit: 0f, debit: 0f, type1: jkl-4, type2: 0);
                     }
 
                     textBox1.Text = "";

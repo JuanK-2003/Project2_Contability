@@ -15,12 +15,18 @@ namespace Project2_Contability.Forms
 {
     public partial class CreateDataForm : Form
     {
-        List<Account> balanceSaldos = new List<Account>();
-        public string outList = "";
+        List<Account> accountTypes = new List<Account>();
+        public string outAccountRepr = "";
 
         public CreateDataForm()
         {
             InitializeComponent();
+        }
+
+        public void loadAccountTypes(string repr)
+        {
+            accountTypes = JsonConvert.DeserializeObject<List<Account>>(repr);
+
         }
 
         protected void CreateDataForm_Load(object sender, EventArgs e)
@@ -55,6 +61,8 @@ namespace Project2_Contability.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Account outAccount = new Account();
+
             if(textBox1.Text != "")
             {
                 if (this.comboBox2.SelectedIndex != -1)
@@ -63,14 +71,18 @@ namespace Project2_Contability.Forms
 
                     if (jkl <= 0 && jkl <= 6)
                     {
-                        balanceSaldos.Add(new Account(nameCuenta: textBox1.Text, credit: 0f, debit: 0f, type1: (int)(jkl / 3), type2: jkl % 3) );
+                        outAccount = new Account(nameCuenta: textBox1.Text, credit: 0f, debit: 0f, type1: (int)(jkl / 3), type2: jkl % 3);
                     }
                     else
                     {
-                        balanceSaldos.Add(new Account(nameCuenta: textBox1.Text, credit: 0f, debit: 0f, type1: jkl, type2: 0));
+                        outAccount = new Account(nameCuenta: textBox1.Text, credit: 0f, debit: 0f, type1: jkl, type2: 0);
                     }
 
+                    textBox1.Text = "";
+                    comboBox2.SelectedIndex = -1;
+
                     MessageBox.Show("Cuenta agregada con éxito!", "Excelente", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                    this.Hide();
                 }
             }
             else
@@ -78,7 +90,7 @@ namespace Project2_Contability.Forms
                 MessageBox.Show("Debe ingresar un nombre de cuenta primero!", "ERROR 001", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            outList = JsonConvert.SerializeObject(balanceSaldos);
+            outAccountRepr = JsonConvert.SerializeObject(outAccount);
         }
 
         // JsonConvert.SerializeObject(cuentaDisponible)
@@ -97,6 +109,11 @@ namespace Project2_Contability.Forms
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+        }
+
+        private void CreateDataForm_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

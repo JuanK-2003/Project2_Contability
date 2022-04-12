@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Project2_Contability</RootNamespace>
     <AssemblyName>Project2_Contability</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,12 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AddAccountForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddAccountForm.Designer.cs">
-      <DependentUpon>AddAccountForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\CreateDataForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +67,12 @@
     </Compile>
     <Compile Include="Forms\FinancialStatementsForm.Designer.cs">
       <DependentUpon>FinancialStatementsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCargarCuentaNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCargarCuentaNuevo.Designer.cs">
+      <DependentUpon>FormCargarCuentaNuevo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\IncomeStatementsForm.cs">
       <SubType>Form</SubType>
@@ -97,9 +98,6 @@
     <Compile Include="Group Class\Statement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\AddAccountForm.resx">
-      <DependentUpon>AddAccountForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CreateDataForm.resx">
       <DependentUpon>CreateDataForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FinancialStatementsForm.resx">
       <DependentUpon>FinancialStatementsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCargarCuentaNuevo.resx">
+      <DependentUpon>FormCargarCuentaNuevo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GeneralBalaceForm.resx">
       <DependentUpon>GeneralBalaceForm.cs</DependentUpon>

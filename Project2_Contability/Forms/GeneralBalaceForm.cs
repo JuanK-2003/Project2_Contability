@@ -15,12 +15,19 @@ namespace Project2_Contability.Forms
 {
     public partial class GeneralBalaceForm : Form
     {
+        List<Account> balanceSaldos = new List<Account>();
+
         List<Account> partidas = new List<Account>();
         string partidasFile = "C:\\Users\\Public\\Partidas.json";
 
         public GeneralBalaceForm()
         {
             InitializeComponent();
+        }
+
+        public void receiveBalanceSaldos(string repr)
+        {
+            balanceSaldos = JsonConvert.DeserializeObject<List<Account>>(repr);
         }
 
         private void GeneralBalanceForm_Load(object sender, EventArgs e)
@@ -54,6 +61,11 @@ namespace Project2_Contability.Forms
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

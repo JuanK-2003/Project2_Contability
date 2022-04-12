@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -55,6 +55,21 @@
             this.panel2.Size = new System.Drawing.Size(1280, 41);
             this.panel2.TabIndex = 1;
             // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.Location = new System.Drawing.Point(572, 4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(340, 34);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "Editar balance de saldos";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -63,7 +78,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(262, 398);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(653, 96);
+            this.label1.Size = new System.Drawing.Size(977, 147);
             this.label1.TabIndex = 2;
             this.label1.Text = "Joel Juan Pablo Gramajo Chan         -----        202008025\r\nJuan Carlos Neíl Pal" +
     "acios Escobar    -----        202008022\r\nRony Lisandro Carpio Alvarado        --" +
@@ -129,7 +144,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 60);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Estados Financieros";
+            this.button4.Text = "Razones Financieras";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -192,24 +207,9 @@
             this.panel3.Size = new System.Drawing.Size(1136, 599);
             this.panel3.TabIndex = 2;
             // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.Location = new System.Drawing.Point(648, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(162, 34);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Editar";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
             // Welcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1279, 634);

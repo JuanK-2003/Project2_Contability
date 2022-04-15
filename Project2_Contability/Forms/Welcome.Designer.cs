@@ -76,13 +76,13 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bodoni MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(262, 398);
+            this.label1.Location = new System.Drawing.Point(248, 398);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(977, 147);
             this.label1.TabIndex = 2;
             this.label1.Text = "Joel Juan Pablo Gramajo Chan         -----        202008025\r\nJuan Carlos Neíl Pal" +
     "acios Escobar    -----        202008022\r\nRony Lisandro Carpio Alvarado        --" +
-    "---        201908016";
+    "---        201908029";
             // 
             // pictureBox1
             // 
@@ -204,7 +204,7 @@
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(144, 39);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1136, 599);
+            this.panel3.Size = new System.Drawing.Size(1550, 616);
             this.panel3.TabIndex = 2;
             // 
             // Welcome
@@ -212,7 +212,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.ClientSize = new System.Drawing.Size(1279, 634);
+            this.ClientSize = new System.Drawing.Size(1726, 741);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);

@@ -46,9 +46,8 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-3, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1287, 724);
+            this.panel1.Size = new System.Drawing.Size(1227, 579);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -73,10 +72,9 @@
             "Cuenta Tipo Interes",
             "Dividendos",
             "Reserva Legal"});
-            this.comboBox2.Location = new System.Drawing.Point(456, 358);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox2.Location = new System.Drawing.Point(434, 286);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(484, 28);
+            this.comboBox2.Size = new System.Drawing.Size(431, 24);
             this.comboBox2.TabIndex = 59;
             // 
             // button1
@@ -84,10 +82,9 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
-            this.button1.Location = new System.Drawing.Point(582, 481);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(517, 385);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 54);
+            this.button1.Size = new System.Drawing.Size(222, 43);
             this.button1.TabIndex = 3;
             this.button1.Text = "Crear Cuenta";
             this.button1.UseVisualStyleBackColor = false;
@@ -95,12 +92,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(660, 262);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.MaximumSize = new System.Drawing.Size(5624, 1249);
+            this.textBox1.Location = new System.Drawing.Point(630, 210);
+            this.textBox1.MaximumSize = new System.Drawing.Size(5000, 1000);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 24);
+            this.textBox1.Size = new System.Drawing.Size(287, 24);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -109,9 +105,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(430, 262);
+            this.label2.Location = new System.Drawing.Point(382, 210);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(272, 28);
+            this.label2.Size = new System.Drawing.Size(226, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre de la Cuenta";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -121,20 +117,19 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(425, 98);
+            this.label1.Location = new System.Drawing.Point(378, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(743, 66);
+            this.label1.Size = new System.Drawing.Size(631, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "CREACIÓN DE CUENTAS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // CreateDataForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1281, 720);
+            this.ClientSize = new System.Drawing.Size(1224, 576);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CreateDataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreateData";

@@ -17,9 +17,6 @@ namespace Project2_Contability.Forms
     {
         List<Account> balanceSaldos = new List<Account>();
 
-        List<Account> partidas = new List<Account>();
-        string partidasFile = "C:\\Users\\Public\\Partidas.json";
-
         public GeneralBalaceForm()
         {
             InitializeComponent();
@@ -28,46 +25,20 @@ namespace Project2_Contability.Forms
         public void receiveBalanceSaldos(string repr)
         {
             balanceSaldos = JsonConvert.DeserializeObject<List<Account>>(repr);
+            GeneralBalance gb = new GeneralBalance();
+            dataGridView1.DataSource = new BindingList<DataToGeneralBalance>(gb.GenerateGeneralBalance(balanceSaldos));
         }
 
         private void GeneralBalanceForm_Load(object sender, EventArgs e)
         {
-            if (validarArchivos())
-            {
-                using (StreamReader rs = new StreamReader(partidasFile))
-                {
-                    partidas = JsonConvert.DeserializeObject<List<Account>>(rs.ReadToEnd());
-                    rs.Close();
-                }
-
-                if (partidas == null)
-                {
-                    partidas = new List<Account>();
-                }
-            }
-            else
-            {
-                File.Create("C:\\Users\\Public\\Partidas.json");
-            }
-
-            GeneralBalance gb = new GeneralBalance();
-            dataGridView1.DataSource = new BindingList<DataToGeneralBalance>(gb.GenerateGeneralBalance(partidas));
-        }
-
-        protected bool validarArchivos()
-        {
-            return
-                File.Exists(partidasFile);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
     }
 }

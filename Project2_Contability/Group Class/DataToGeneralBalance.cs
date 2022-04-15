@@ -9,7 +9,6 @@ namespace Project2_Contability.Group_Class
     class DataToGeneralBalance
     {
         private string columna1, columna2, columna3;
-        private double aux;
 
         public DataToGeneralBalance(string n1)
         {

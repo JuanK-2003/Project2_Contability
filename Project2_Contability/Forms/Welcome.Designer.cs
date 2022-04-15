@@ -52,17 +52,17 @@
             this.panel2.Controls.Add(this.button6);
             this.panel2.Location = new System.Drawing.Point(0, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1280, 41);
+            this.panel2.Size = new System.Drawing.Size(1725, 41);
             this.panel2.TabIndex = 1;
             // 
             // button6
             // 
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.Location = new System.Drawing.Point(572, 4);
+            this.button6.Location = new System.Drawing.Point(759, 4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(340, 34);
             this.button6.TabIndex = 0;
@@ -76,9 +76,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bodoni MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(248, 398);
+            this.label1.Location = new System.Drawing.Point(394, 404);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(977, 147);
+            this.label1.Size = new System.Drawing.Size(810, 120);
             this.label1.TabIndex = 2;
             this.label1.Text = "Joel Juan Pablo Gramajo Chan         -----        202008025\r\nJuan Carlos Neíl Pal" +
     "acios Escobar    -----        202008022\r\nRony Lisandro Carpio Alvarado        --" +
@@ -89,7 +89,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Project2_Contability.Properties.Resources.LOGO_UMES_COLOR;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(428, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(675, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(338, 303);
             this.pictureBox1.TabIndex = 3;
@@ -177,7 +177,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(0, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(154, 599);
+            this.panel1.Size = new System.Drawing.Size(149, 702);
             this.panel1.TabIndex = 0;
             // 
             // button2
@@ -204,12 +204,12 @@
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(144, 39);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1550, 616);
+            this.panel3.Size = new System.Drawing.Size(1581, 616);
             this.panel3.TabIndex = 2;
             // 
             // Welcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1726, 741);

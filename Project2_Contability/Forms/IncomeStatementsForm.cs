@@ -46,5 +46,10 @@ namespace Project2_Contability.Forms
             EstadoResultados er = new EstadoResultados();
             dataGridView1.DataSource = new BindingList<ToShowER>(er.GenerateEstadoResultados(balanceSaldos, checkBox2.Checked, checkBox1.Checked));
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

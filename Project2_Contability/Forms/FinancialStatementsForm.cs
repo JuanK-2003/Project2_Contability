@@ -24,9 +24,18 @@ namespace Project2_Contability.Forms
         public void receiveBalanceSaldos(string repr)
         {
             balanceSaldos = JsonConvert.DeserializeObject<List<Account>>(repr);
+
+            Statement RazonesFinancieras = new Statement();
+
+            dataGridView1.DataSource = new BindingList<StatementToShow>(RazonesFinancieras.GenerarRazones(balanceSaldos));
         }
 
         private void FinancialStatementsForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

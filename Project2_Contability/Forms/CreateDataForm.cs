@@ -63,7 +63,7 @@ namespace Project2_Contability.Forms
         {
             Account outAccount = new Account();
 
-            if(textBox1.Text != "")
+            if (textBox1.Text != "")
             {
                 if (this.comboBox2.SelectedIndex != -1)
                 {
@@ -75,13 +75,13 @@ namespace Project2_Contability.Forms
                     }
                     else
                     {
-                        outAccount = new Account(nameCuenta: textBox1.Text, credit: 0f, debit: 0f, type1: jkl-4, type2: 0);
+                        outAccount = new Account(nameCuenta: textBox1.Text, credit: 0f, debit: 0f, type1: jkl - 4, type2: 0);
                     }
 
                     textBox1.Text = "";
                     comboBox2.SelectedIndex = -1;
 
-                    MessageBox.Show("Cuenta agregada con éxito!", "Excelente", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                    MessageBox.Show("Cuenta agregada con éxito!", "Excelente", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                 }
             }

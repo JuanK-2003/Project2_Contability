@@ -41,7 +41,7 @@ namespace Project2_Contability.Forms
 
             int jkl = comboBoxTipo.SelectedIndex;
 
-            if (jkl <= 0 && jkl <= 6)
+            if (jkl >= 0 && jkl <= 6)
             {
                 nuevaCuenta.Type1 = (int)(jkl / 3);
                 nuevaCuenta.Type2 = jkl % 3;

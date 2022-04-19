@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Project2_Contability.Group_Class
 {
@@ -17,6 +18,15 @@ namespace Project2_Contability.Group_Class
             double[] APCsum = { 0, 0, 0 };
 
             List<DataToGeneralBalance> dataToDisplay = new List<DataToGeneralBalance>();
+
+            for(int i = 0; i < cuentas.Count; i++)
+            {
+                if( cuentas[i].NameCuenta.ToLower().Contains("acumulada"))
+                {
+                    cuentas[i].Credit *= -1;
+                    cuentas[i].Debit *= -1;
+                }
+            }
 
             for (int type1idx = 0; type1idx <= 2; type1idx++) // recorre activo, pasivo y capital
             {
@@ -36,15 +46,10 @@ namespace Project2_Contability.Group_Class
                             if (zidx < 0) // no esta incluida
                             {
                                 AcountNames.Add(cuentas[cidx].NameCuenta);
-                                AcountBalance.Add(cuentas[cidx].Credit - cuentas[cidx].Debit);
+                                AcountBalance.Add(cuentas[cidx].Credit + cuentas[cidx].Debit);
                             }
-                            else AcountBalance[zidx] = AcountBalance[zidx] + cuentas[cidx].Credit - cuentas[cidx].Debit;
+                            else AcountBalance[zidx] = AcountBalance[zidx] + cuentas[cidx].Credit + cuentas[cidx].Debit;
                         }
-                    }
-
-                    for (int idxg = 0; idxg < AcountBalance.Count; idxg++)
-                    {
-                        AcountBalance[idxg] = Math.Abs(AcountBalance[idxg]);
                     }
 
                     if (AcountNames.Count > 0)

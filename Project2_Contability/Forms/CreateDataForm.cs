@@ -69,7 +69,7 @@ namespace Project2_Contability.Forms
                 {
                     int jkl = comboBox2.SelectedIndex;
 
-                    if (jkl <= 0 && jkl <= 6)
+                    if (jkl >= 0 && jkl <= 6)
                     {
                         outAccount = new Account(nameCuenta: textBox1.Text, credit: 0f, debit: 0f, type1: (int)(jkl / 3), type2: jkl % 3);
                     }
